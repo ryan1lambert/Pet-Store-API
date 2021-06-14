@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class PetService {
-	
+	//this class is where the data is instantiated
 	private List<Pet> pets = new ArrayList<>(Arrays.asList(
 			new Pet(0,"name", "category", "photourl", Arrays.asList("tag1", "tag2"), "status" ),
 			new Pet(1, "Mo", "Dog", "photourl", Arrays.asList("bad", "small"), "available" ),
