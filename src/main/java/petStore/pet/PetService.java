@@ -14,15 +14,12 @@ public class PetService {
 			new Pet(1, "Mo", "Dog", "photourl", Arrays.asList("bad", "small"), "available" ),
 			new Pet(2, "Cooper", "Dog", "photourl", Arrays.asList("good", "big"), "not available" )
 			));
-	
 	public List<Pet> getAllPets(){
 		return pets;
 	}
-	
 	public Pet getPet(int id) {
 		return pets.stream().filter(p -> p.getId() == (id)).findFirst().get();
 	}
-	
 	public void addPet(Pet pet) {
 		pets.add(pet);
 	}
